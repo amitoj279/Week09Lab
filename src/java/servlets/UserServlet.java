@@ -11,14 +11,6 @@ import services.UserService;
 
 public class UserServlet extends HttpServlet {
 
-    /**
-     * The doGet method in UserServlet, which works with users.jsp
-     *
-     * @param request request
-     * @param response response
-     * @throws ServletException Servlet Exception
-     * @throws IOException Input/Output Exception
-     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -74,14 +66,7 @@ public class UserServlet extends HttpServlet {
         getServletContext().getRequestDispatcher("/WEB-INF/users.jsp").forward(request, response);
     }
 
-    /**
-     * The doPost method in UserServlet, which works with users.jsp
-     *
-     * @param request request
-     * @param response response
-     * @throws ServletException Servlet Exception
-     * @throws IOException IOException
-     */
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
